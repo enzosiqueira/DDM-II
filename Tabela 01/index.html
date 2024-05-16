@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 01</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;            
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: #fff;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgrey;
+        }
+
+        .num{
+            text-align:right;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESTRUTURA DE TABELAS GRANDES</h1>
+    <table>
+        <tr>
+            <caption colspan="2">POPULAÇÃO DOS ESTADOS</caption>
+        </tr>
+        <thead>
+            <th colspan="2">SUDESTE</th>
+        </thead>
+        <thead>
+            <th>Estado</th>
+            <th class="num">Quantidade</th>
+        </thead>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">44 Milhões</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">20 Milhões</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">16 Milhões</td>
+        </tr>
+        <tr>
+            <td>Espírito Santo</td>
+            <td class="num">4 Milhões</td>
+        </tr>
+        <tfoot>
+            <th>Total de Habitantes</th>
+            <th class="num">84 Milhões</th>
+        </tfoot>
+    </table>
+</body>
+</html>
