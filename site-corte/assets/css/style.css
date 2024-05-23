@@ -1,0 +1,17 @@
+.container{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.row-1, .row-2, .row-3{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
